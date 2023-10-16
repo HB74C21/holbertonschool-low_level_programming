@@ -9,7 +9,7 @@ int main(void)
 	int number_base_10;
 	int number_base_16;
 
-	for (number_base_10 = '1'; number_base_10 <= '9'; number_base_10++)
+	for (number_base_10 = '0'; number_base_10 <= '9'; number_base_10++)
 		putchar(number_base_10);
 
 	for (number_base_16 = 'a'; number_base_16 <= 'f'; number_base_16++)
