@@ -7,7 +7,7 @@
  *
  * Return: The result of the sum of 2 integer
 */
-int op_add(int a, int b);
+int op_add(int a, int b)
 {
 	return (a + b);
 }
