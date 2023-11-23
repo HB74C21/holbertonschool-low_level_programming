@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include <stddef.h>
 #include "variadic_functions.h"
+#include <stdlib.h>
 /**
  * type_c - Function that print the type char
  * @ap: This is a list of argument pointed to a type char
@@ -52,7 +54,9 @@ void type_s(va_list ap)
 	str = va_arg(ap, char *);
 
 	if (str == NULL)
-		printf("(nil)");
+	{
+		str = "(nil)";
+	}
 
 	printf("%s", str);
 }
