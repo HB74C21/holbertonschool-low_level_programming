@@ -3,7 +3,7 @@
 /**
  * free_list - Function that frees a list_t list
  *
- * head: This is a pointer to the first element of the list_t list
+ * @head: This is a pointer to the first element of the list_t list
 */
 void free_list(list_t *head)
 {
