@@ -13,6 +13,9 @@ unsigned int binary_to_uint(const char *b)
 	int count = 0;
 	unsigned int result = 0;
 
+	if (b == NULL)
+		return (0);
+
 	while (b[lenght] != '\0')
 	{
 		if (b[lenght] != '0' && b[lenght] != '1')
