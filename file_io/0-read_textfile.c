@@ -31,14 +31,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fd = open(filename, letters);
 
-	if (fd == -1)
-		return (0);
-
 	num_read = read(fd, buffer, letters);
-	if (num_read == -1)
-		return (0);
 
 	num_write = write(1, buffer, num_read);
+
 	if (num_write == -1)
 		return (0);
 
