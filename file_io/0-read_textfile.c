@@ -16,10 +16,10 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *buffer = NULL;
-	int fd = 0;
-	ssize_t num_read = 0;
-	ssize_t num_write = 0;
+	char *buffer;
+	int fd;
+	ssize_t num_read;
+	ssize_t num_write;
 
 	if (filename == NULL)
 		return (0);
